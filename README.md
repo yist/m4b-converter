@@ -107,6 +107,6 @@ Encode with lame.exe:
 
     python m4b.py --encoder lame.exe --pipe-wav --encode-opts "-V 3 -h - %(outfile)s" myfile.m4b
     
-Quickly split a large m4b file by chapter using ffmpeg:
+Quickly split a large m4b file by chapter using ffmpeg (assumingly in the current directory):
 
     python m4b.py --skip-encoding --no-mp4v2 --ffmpeg="./ffmpeg" --custom-name "myfile - %(title)s" myfile.m4b
